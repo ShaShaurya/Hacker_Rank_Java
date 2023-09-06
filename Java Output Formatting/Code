@@ -1,0 +1,76 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            String s1 = sc.next();
+            int x1 = sc.nextInt();
+            String s2 = sc.next();
+            int x2 = sc.nextInt();
+            String s3 = sc.next();
+            int x3 = sc.nextInt();
+            char ch = '0';
+            
+            
+            System.out.println("================================");
+            
+            int l1 = s1.length();
+            int l2 = s2.length();
+            int l3 = s3.length();
+            int i;
+            
+            System.out.print(s1);
+            for(i=l1; i<15; i++)
+            {
+                System.out.printf(" ");
+            }
+            if(x1<100)
+            {
+                if(x1==0)
+                System.out.printf("%c%c%d\n",ch,ch,x1);
+                else
+                System.out.printf("%c%d\n",ch,x1);
+            }
+            else
+            {
+                System.out.printf("%d\n",x1);
+            }
+            
+            System.out.print(s2);
+            for(i=l2; i<15; i++)
+            {
+                System.out.printf(" ");
+            }
+            if(x2<100)
+            {
+                if(x2==0)
+                System.out.printf("%c%c%d\n",ch,ch,x2);
+                else
+                System.out.printf("%c%d\n",ch,x2);
+            }
+            else
+            {
+                System.out.printf("%d\n",x2);
+            }
+            
+            
+            System.out.print(s3);
+            for(i=l3; i<15; i++)
+            {
+                System.out.printf(" ");
+            }
+            if(x3<100)
+            {
+                if(x3==0)
+                System.out.printf("%c%c%d\n",ch,ch,x3);
+                else
+                System.out.printf("%c%d\n",ch,x3);
+            }
+            else
+            {
+                System.out.printf("%d\n",x3);
+            }
+            System.out.println("================================");
+    }
+}
